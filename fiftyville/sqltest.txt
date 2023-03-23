@@ -1,0 +1,6 @@
+select people.name from people join bank_accounts on people.id = bank_accounts.person_id join passengers on people.passport_number = passengers.passport_number
+join flights on passengers.flight_id = flights.id join airports on flights.origin_airport_id = airports.id
+where people.license_plate in (select license_plate from bakery_security_logs where month = 7 and day = 28 and activity = 'exit' and hour = 10) and
+bank_accounts.account_number in (select account_number from atm_transactions where month = 7 and day = 28 and atm_location = 'Leggett Street' and transaction_type = 'withdraw') and
+people.phone_number in (select caller from phone_calls where month = 7 and day = 28 and duration <= 60)
+and people.passport_number in (select passport_number from passengers where flight_id = 6);

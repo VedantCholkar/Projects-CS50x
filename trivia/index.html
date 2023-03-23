@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+        // TODO: Add code to check answers to questions
+        function btn1() {
+            var btn = document.getElementById("btn1");
+            btn.style.backgroundColor = "red";
+            btn.style.color = "white";
+            document.getElementById("ans1").innerHTML = "Wrong!";
+        }
+        function btn2() {
+            var btn = document.getElementById("btn2");
+            btn.style.backgroundColor = "green";
+            btn.style.color = "white";
+            document.getElementById("ans1").innerHTML = "Correct!";
+        }
+        function btn3() {
+            var btn = document.getElementById("btn3");
+            btn.style.backgroundColor = "red";
+            btn.style.color = "white";
+            document.getElementById("ans1").innerHTML = "Wrong!";
+        }
+
+        function check_ans() {
+            var textbox = document.getElementById("text_ans");
+            if (textbox.value.toLowerCase() == 'bilbo baggins') {
+                textbox.style.backgroundColor = "green";
+                textbox.style.color = "white";
+                document.getElementById("ans2").innerHTML = "Correct!";
+            }
+            else {
+                textbox.style.backgroundColor = "red";
+                textbox.style.color = "white";
+                document.getElementById("ans2").innerHTML = "Wrong!";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <h3>How many Nazgul are there?</h3>
+            <button type="button" onclick="btn1()" id="btn1">3</button>
+            <button type="button" onclick="btn2()" id="btn2">9</button>
+            <button type="button" onclick="btn3()" id="btn3">7</button>
+            <p id="ans1"></p>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <!-- TODO: Add free response question here -->
+            <h3>Who adopted Frodo when his parents died?</h3>
+            <input type="text" id="text_ans">
+            <input type="submit" value="Submit" onclick="check_ans()">
+            <p id="ans2"></p>
+        </div>
+    </div>
+</body>
+
+</html>
