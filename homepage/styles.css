@@ -1,0 +1,116 @@
+.homepage-title {
+    font-size: 3em;
+    text-align: center;
+    margin: 50px;
+    color: white;
+    transition: 0.3s linear all;
+  }
+
+  .homepage-title:hover {
+    font-size: 3.2em;
+  }
+
+  .homepage-bg {
+    background: linear-gradient(270deg, #ff1919, #ff8735);
+    background-size: 400% 400%;
+    animation: background_ani 5s ease infinite;
+  }
+
+  @keyframes background_ani {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .skills-title {
+    font-size: 3em;
+    text-align: center;
+    margin: 50px;
+    color: white;
+    transition: 0.3s linear all;
+  }
+
+  .skills-bg {
+    background: linear-gradient(270deg, #00e9ff, #00a5ff);
+    background-size: 400% 400%;
+    animation: background_ani 5s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .skills-list {
+    margin: 25px;
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .skills-item {
+    margin: 5px;
+  }
+
+  .hobbies-title {
+    font-size: 3em;
+    text-align: center;
+    margin: 50px;
+    color: white;
+    transition: 0.3s linear all;
+  }
+
+  .hobbies-bg {
+    background: linear-gradient(270deg, #00ff13, #00b92f);
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hobbies-list {
+    margin: 25px;
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .hobbies-item {
+    margin: 25px;
+  }
+
+  .pics-bg {
+    background: linear-gradient(270deg, #ce9c00, #c7c7c7);
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease infinite;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .random-pics {
+    border-radius: 15px;
+    margin: 25px 0 25px 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .heading {
+    color: #eee;
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }

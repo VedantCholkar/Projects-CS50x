@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: It is slow on random lists but significantly faster on sorted lists. It has a O(n2) and Ω(n) which matchs the test results.
+
+sort2 uses: Merge sort
+
+How do you know?: It is faster than both the sorts on random lists and results of random and sorted lists matched almost exactly. It has a Θ(n log n) which matches test results.
+
+sort3 uses: Selection sort
+
+How do you know?: It performs almost exactly the same on both random and sorted lists. It has Θ(n2).
